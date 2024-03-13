@@ -8,7 +8,7 @@ def main():
     """
     Esta função escreve "Hello World!" usando Streamlit.
     """
-    st.write("Hello Word!")
+    st.write("Em construção!")
 
 if __name__ == "__main__":
     main()
