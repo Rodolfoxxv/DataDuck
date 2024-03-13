@@ -1,0 +1,105 @@
+Git dahs
+rodol@DESKTOP-FAURFRM MINGW64 ~
+$ cd C:/Users/rodol/OneDrive/Documents/GitHub
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub
+$ mkdir DataDuck
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub
+$ ls
+ DataDuck/      'GCP - Terraform State V.0.1'/   datamatrix/
+ GCP/           'GCP - refit V0.2'/              desktop.ini
+'GCP - Copia'/   Rodolfoxxv/                     rodolfoxxv.github.io/
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub
+$ cd DataDuck/
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck
+$ ^[[200~git init
+bash: $'\E[200~git': command not found
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck
+$ git init
+Initialized empty Git repository in C:/Users/rodol/OneDrive/Documents/GitHub/DataDuck/.git/
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (master)
+$ touch README.md
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (master)
+$ git add README.md
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (master)
+$ git commit -m "Adicionado README.md"
+[master (root-commit) 3e8541b] Adicionado README.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (master)
+$ git log
+commit 3e8541bef26c360347b1efd0357a17fab14ce566 (HEAD -> master)
+Author: RodolfoxvData <136007122+Rodolfoxxv@users.noreply.github.com>
+Date:   Tue Mar 12 21:23:56 2024 -0300
+
+    Adicionado README.md
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (master)
+$ git remote add origin https://github.com/Rodolfoxxv/DataDuck.git
+git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Rodolfoxxv/DataDuck.git'
+
+rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (master)
+$ git remote add origin https://github.com/Rodolfoxxv/DataDuck.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+git branch -M main
+git push -u origin main
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 243 bytes | 40.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Rodolfoxxv/DataDuck.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+Estrutura
+git ->   ->configuração/ Deployed -> Desenvolvimento
+ja criei o repositorio usando git dash rodol@DESKTOP-FAURFRM MINGW64 ~/OneDrive/Documents/GitHub/DataDuck (main)
+
+Instalar o MSYS2
+Abra o MSYS2 MinGW e instale as dependências necessárias com o seguinte comando:
+pacman -S git gcc make zlib-devel libffi-devel
+Depois de instalado, você precisa adicionar pyenv 
+abra o powershell admin
+execute
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"
+depois
+&"./install-pyenv-win.ps1"
+caso nao tenha permissao basta rodar 
+Set-ExecutionPolicy RemoteSigned 
+e fazer passo anterior
+depois so rodar  para bloquear denovo
+Set-ExecutionPolicy Restricted
+
+se quiser usar poetry
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | Invoke-Expression
+instale a variavel do sistema C:\Users\rodol\AppData\Roaming\Python\Scripts
+e poetry --version
+
+com docker
+     
+$ git add .
+$ git commit -m "one up docker"
+$ git push
+
